@@ -26,7 +26,7 @@ class TemplateBuilder
 end
 
 
-nifi_client = Nifi.new()
+nifi_client = Nifi.new(:host => 'localhost', :port => '8080')
 nifi_client.set_debug true
 
 TemplateBuilder.new(
