@@ -2,7 +2,7 @@
 <template encoding-version="1.0">
   <description>This template gives you an ability to get some messages from Kafka, processing them using CoreNLP and then write back to Kafka.</description>
   <groupId>ceee039e-015b-1000-f49c-ec1599c54e16</groupId>
-  <name>Kafka_CoreNLP</name>
+  <name>Kafka_CoreNLP2</name>
   <snippet>
     <connections>
       <id>cef7352b-015b-1000-0000-000000000000</id>

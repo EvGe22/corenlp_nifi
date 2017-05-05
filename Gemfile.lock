@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/EvGe22/nifi_sdk_ruby
-  revision: 1ba1ffb73dceec9a593773785e2752b2e40596f0
+  revision: c7d6819d238bad7c50fe02e928a325bfe35e5dc0
   specs:
-    nifi_sdk_ruby (0.0.4)
+    nifi_sdk_ruby (0.0.5)
       activesupport (>= 5.0.2)
       curb (>= 0.9.3)
       httparty (>= 0.14.0)

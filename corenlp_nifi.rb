@@ -30,7 +30,7 @@ nifi_client = Nifi.new()
 nifi_client.set_debug true
 
 TemplateBuilder.new(
-    :template_name =>  'Kafka_CoreNLP',
+    :template_name =>  'Kafka_CoreNLP2',
     :extract_regex =>  '(.*)',
     :sentence_nifi_regex =>  '${sentence}',
     :kafka_ip =>  'localhost:9092',
@@ -39,7 +39,11 @@ TemplateBuilder.new(
     :publish_topic =>  'test_output',
     :replacement_regex =>  '(\s?$)'
 ).to_file('Kafka_CoreNLP.xml')
-nifi_client.upload_template(:path => 'Kafka_CoreNLP.xml')
+begin
+  nifi_client.upload_template(:path => 'Kafka_CoreNLP.xml')
+rescue => e
+  p e
+end
 
 sleep 1
 
